@@ -52,7 +52,7 @@
             <img src="assets/images/hr-logo.png" alt="" class="img-fluid">
         </a>
         <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search the Job" aria-label="Search">
+            <input class="form-control me-2 not-apply" type="search" placeholder="Search the Job" aria-label="Search">
             <!-- <button class="btn" type="submit">Search</button> -->
         </form>
     </div>

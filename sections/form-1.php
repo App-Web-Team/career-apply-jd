@@ -1,86 +1,68 @@
-<head>
-    <link rel="stylesheet" href="assets/styles/style-form-1.css">
-</head>
 
-<p class="details-heading text-capitalize">
-    personal details
-</p>
-<div class="form-row text-left mt-4 mb-4">
-    <div class="fix-height d-flex flex-row">
-        <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">first Name</label>
+<!-- <div class="form-1"> -->
+<div class="">
+    <p class="details-heading text-capitalize">
+        personal details
+    </p>
+    <form action="">
+        <div class="row f-row mt-5">
+            <div class="col">
+                <input required type="text" />
+                <label>First Name</label>
+            </div>
+            <div class="col">
+                <input required type="text" />
+                <label>Last Name</label>
+            </div>
         </div>
-        <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">last Name</label>
+        <div class="row f-row my-5">
+            <div class="col">
+                <input required type="tel" />
+                <label>Phone No.</label>
+            </div>
+            <div class="col">
+                <input required type="email" />
+                <label>Email</label>
+            </div>
         </div>
-    </div>
-</div>
-<div class="form-row text-left mb-4">
-    <div class="d-flex flex-row">
-        <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">phone no.</label>
+        <div class="row f-row my-5">
+            <div class="col">
+                <input required type="text" />
+                <label>Address</label>
+            </div>
         </div>
-        <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">email id</label>
+        <div class="row f-row my-5">
+            <div class="col">
+                <input required type="text" />
+                <label>State</label>
+            </div>
+            <div class="col">
+                <input required type="text" />
+                <label>pincode</label>
+            </div>
         </div>
-    </div>
-</div>
-<div class="form-row text-left mb-4">
-    <div class="">
-        <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">address</label>
+        <div class="row f-row my-5">
+            <div class="col">
+                <input required type="text" />
+                <label>father's name</label>
+            </div>
+            <div class="col">
+                <input required type="text" />
+                <label>father's occupation</label>
+            </div>
         </div>
-    </div>
-</div>
-<div class="form-row text-left mb-4">
-    <div class="d-flex flex-row">
-        <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">state</label>
+        <div class="row f-row my-5">
+            <div class="col">
+                <input required type="text" />
+                <label>mother's name</label>
+            </div>
+            <div class="col">
+                <input required type="text" />
+                <label>mother's occupation</label>
+            </div>
         </div>
-        <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">pincode</label>
+        <div class="text-center">
+            <button class="first next">Save & Proceed</button>
         </div>
-    </div>
-</div>
-<div class="form-row text-left mb-4">
-    <div class="d-flex flex-row">
-        <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">father's name</label>
-        </div>
-        <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">father's occupation</label>
-        </div>
-    </div>
-</div>
-<div class="form-row text-left mb-4">
-    <div class="d-flex flex-row">
-        <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">mother's name</label>
-        </div>
-        <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">mother's occupation</label>
-        </div>
-    </div>
+    </form>
 </div>

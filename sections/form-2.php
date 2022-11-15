@@ -1,63 +1,60 @@
-<head>
-    <link rel="stylesheet" href="assets/styles/style-form-2.css">
-</head>
 
-<p class="details-heading text-capitalize">
-    academic grounds
-</p>
-<div class="form-row text-left mt-4 mb-4">
-    <div class="d-flex flex-row">
-        <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">degree</label>
-        </div>
-        <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">college</label>
-        </div>
-    </div>
-</div>
-<div class="form-row text-left mb-4">
-    <div class="d-flex flex-row">
-        <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">year <span class="text-lowercase">of</span> graduation</label>
-        </div>
-        <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">
-                <span class="text-uppercase">cgpa</span> / percentage
-            </label>
-        </div>
-    </div>
-</div>
-<div class="form-row text-left mb-4">
-    <div class="d-flex flex-row">
-        <button class="btn add-btn text-capitalize ml-3">+ add</button>
-    </div>
-</div>
-<p class="please-text ml-3 mb-4">Please list out all the certification throughout the years</p>
-<div class="form-row text-left mb-4">
-    <div class="d-flex flex-row">
-        <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">certifications</label>
-        </div>
-        <div class="input-data">
-            <input type="text" required>
-            <div class="underline"></div>
-            <label for="">year</label>
-        </div>
-    </div>
-</div>
-<div class="form-row text-left mb-4">
-    <div class="d-flex flex-row">
-        <button class="btn add-btn text-capitalize ml-3">+ add</button>
-    </div>
-</div>
+<!-- <div class="form-2-move-up"> -->
+<div class="mt-5">
 
+    <p class="details-heading text-capitalize">
+        academic grounds
+    </p>
+
+
+    <form action="">
+        <div class="row f-row mt-5">
+            <div class="col">
+                <input required type="text" />
+                <label>degree</label>
+            </div>
+            <div class="col">
+                <input required type="text" />
+                <label>college</label>
+            </div>
+        </div>
+        <div class="row f-row my-5">
+            <div class="col">
+                <input required type="text" />
+                <label>year <span class="text-lowercase">of</span> graduation</label>
+            </div>
+            <div class="col">
+                <input required type="text" />
+                <label><span class="text-uppercase">cgpa</span> / percentage</label>
+            </div>
+        </div>
+        <div class="row f-row">
+            <button class="btn add-btn text-capitalize ml-3">+ add</button>
+        </div>
+        <div class="row f-row my-5">
+            <p class="please-text ml-3">Please list out all the certification throughout the years</p>
+        </div>
+        <div class="row f-row my-5">
+            <div class="col">
+                <input required type="text" />
+                <label>certifications</label>
+            </div>
+            <div class="col">
+                <input required type="text" />
+                <label>year</label>
+            </div>
+            <div class="col">
+                <input required type="text" />
+                <label>provided by</label>
+            </div>
+        </div>
+        <div class="row f-row my-0 mb-3">
+            <button class="btn add-btn text-capitalize ml-3">+ add</button>
+        </div>
+        <div class="text-center">
+            <button class="second next">Save & Proceed</button>
+        </div>
+    </form>
+
+
+</div>
