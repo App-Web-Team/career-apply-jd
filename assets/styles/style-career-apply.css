@@ -141,17 +141,30 @@
 }
 
 .form-3-move-up {
-    transform: translateY(-1215px);
+    transform: translateY(-1178px);
 }
+
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .form-3-move-up {
-        transform: translateY(-1255px);
+        transform: translateY(-1210px)
     }
 }
 
 .form-4-move-up {
-    transform: translateY(-1740px);
+    transform: translateY(-1720px);
+}
+
+@media screen and (max-width: 576px) {
+
+    .form-3-move-up {
+        transform: translateY(-1155px);
+    }
+
+    .form-4-move-up {
+        transform: translateY(-1710px);
+    }
+
 }
 
 /* end - jquery styling */
@@ -184,12 +197,11 @@ input:not(.not-apply) {
     /* z-index: 20; */
 }
 
-input:focus {
+input:focus:not(.not-apply) {
     border-bottom: solid 2px var(--secondary-color);
 }
 
-input:not(.not-apply):focus~label,
-input:not(.not-apply):valid~label {
+input:not(.not-apply):focus~label {
     top: -60px;
     /* font-size: 14px; */
     color: var(--secondary-color);
@@ -197,6 +209,13 @@ input:not(.not-apply):valid~label {
 
 .col {
     height: 20px;
+    position: relative;
+}
+
+.col i {
+    position: absolute;
+    right: 20px;
+    color: var(--secondary-color);
 }
 
 @media screen and (max-width: 576px) {
@@ -207,7 +226,49 @@ input:not(.not-apply):valid~label {
 
 /* end - form styling */
 
+/* form 1 styling */
+
+.job-box {
+    position: absolute;
+    top: 1.5rem;
+    left: 19rem;
+}
+
+.position {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+.first-button {
+    margin-top: 138px;
+}
+
+@media screen and (max-width: 576px) {
+    .job-box {
+        top: 1.5rem;
+        left: 14rem;
+    }
+
+    .position {
+        font-size: 12px;
+    }
+}
+
+
+
+/* end - form 1 styling */
+
 /* form 2 styling */
+
+.degree-wrapper {
+    height: 200px;
+    overflow-y: scroll;
+}
+
 /* end - form 2 styling */
 
 /* form 2 styling */
@@ -246,6 +307,7 @@ input:not(.not-apply):valid~label {
     border-radius: 15px;
     width: 100%;
     padding: 50px;
+    /* position: relative; */
 }
 
 @media screen and (max-width: 576px) {
@@ -256,9 +318,9 @@ input:not(.not-apply):valid~label {
 }
 
 .resume-box label {
-    cursor: pointer;
     font-size: 17px;
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 .resume-box p {
@@ -294,6 +356,38 @@ form-check-input {
     /* top: -100%; */
 }
 
+#err-file {
+    color: var(--secondary-color);
+}
+
+#succ-file {
+    color: var(--secondary-color);
+}
+
 
 
 /* end - form 4 styling */
+
+.degree-duplicate {
+    height: 180px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.certifications-duplicate {
+    height: 100px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.experience-duplicate {
+    height: 180px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.skills-duplicate {
+    height: 100px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}

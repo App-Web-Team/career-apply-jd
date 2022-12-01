@@ -1,5 +1,16 @@
+var isValid = false;
+var isEmailValid = false;
+var isPinValid = false;
+var isYogValid = false;
+var isYipValid = false;
 
 $(".zero").click(function (event) {
+
+    isValid = false;
+    isEmailValid = false;
+    isPinValid = false;
+    isYogValid = false;
+    isYipValid = false;
 
     $(".side-icons > button:first").addClass("active");
     $(".side-icons > button:nth-child(2)").removeClass("active");
@@ -11,63 +22,22 @@ $(".zero").click(function (event) {
     $(".wrapper > div:nth-child(3)").removeClass("form-3-move-up");
     $(".wrapper > div:nth-child(4)").removeClass("form-4-move-up");
 
-    // Stop the button from performing it's default task
-    event.preventDefault();
-});
-
-$(".first").click(function (event) {
-
-    $(".side-icons > button:first").removeClass("active");
-    $(".side-icons > button:nth-child(2)").addClass("active");
-    $(".side-icons button:nth-child(3)").removeClass("active");
-    $(".side-icons button:nth-child(4)").removeClass("active");
-
-    $(".wrapper > div:nth-child(1)").addClass("form-1-move-down");
-    $(".wrapper > div:nth-child(2)").addClass("form-2-move-up");
-    $(".wrapper > div:nth-child(3)").removeClass("form-3-move-up");
-    $(".wrapper > div:nth-child(4)").removeClass("form-4-move-up");
+    $(".side-icons > button:nth-child(2)").prop('disabled', true);
+    $(".side-icons > button:nth-child(3)").prop('disabled', true);
+    $(".side-icons > button:nth-child(4)").prop('disabled', true);
 
     // Stop the button from performing it's default task
     event.preventDefault();
 });
 
 
-$(".second").click(function (event) {
-
-    $(".side-icons button:nth-child(1)").removeClass("active");
-    $(".side-icons button:nth-child(2)").removeClass("active");
-    $(".side-icons button:nth-child(3)").addClass("active");
-    $(".side-icons button:nth-child(4)").removeClass("active");
 
 
-    $(".wrapper > div:nth-child(1)").addClass("form-1-move-down");
-    $(".wrapper > div:nth-child(2)").removeClass("form-2-move-up");
-    $(".wrapper > div:nth-child(3)").addClass("form-3-move-up");
-    $(".wrapper > div:nth-child(4)").removeClass("form-4-move-up");
 
 
-    event.preventDefault();
-});
 
-$(".third").click(function (event) {
 
-    $(".side-icons button:nth-child(1)").removeClass("active");
-    $(".side-icons button:nth-child(2)").removeClass("active");
-    $(".side-icons button:nth-child(3)").removeClass("active");
-    $(".side-icons button:nth-child(4)").addClass("active");
 
-    $(".wrapper > div:nth-child(1)").addClass("form-1-move-down");
-    $(".wrapper > div:nth-child(2)").removeClass("form-2-move-up");
-    $(".wrapper > div:nth-child(3)").removeClass("form-3-move-up");
-    $(".wrapper > div:nth-child(4)").addClass("form-4-move-up");
 
-    event.preventDefault();
-});
 
-// // The third button will be clicked when the user is ready to submit their question
-// $(".third").click(function (event) {
-//     $(".container").addClass("first-dot initial-active-area")
-//     $(".container").removeClass("third-dot third-active-area");
-//     // Stop the button from performing it's default task
-//     event.preventDefault();
-// });
+

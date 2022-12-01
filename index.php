@@ -17,7 +17,7 @@
     <title>Job Description</title>
 </head>
 
-<body>
+<body onload='document.form1.fname.focus()'>
     <?php
     // search section
     include "sections/search-section.php";
@@ -30,6 +30,10 @@
     ?>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
     <script src="assets/scripts/career-apply-script.js"></script>
+    <script src="assets/scripts/form1.js"></script>
+    <script src="assets/scripts/form2.js"></script>
+    <script src="assets/scripts/form3.js"></script>
+    <script src="assets/scripts/form4.js"></script>
 </body>
 
 </html>
