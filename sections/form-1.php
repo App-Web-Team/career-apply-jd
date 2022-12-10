@@ -4,8 +4,8 @@
         personal details
     </p>
     <div class="job-box">
-        <input type="text" name="position" value="Graphic Designer" readonly="readonly" class="not-apply position">
-        <input type="text" name="jobId" value="JPW22D-GD-1001" readonly="readonly" class="not-apply position">
+        <input type="text" name="position" value="<?php echo $jdRole; ?>" readonly="readonly" class="not-apply position">
+        <input type="text" name="jobId" value="<?php echo $jdId; ?>" readonly="readonly" class="not-apply position">
     </div>
 
 

@@ -1,3 +1,23 @@
+<?php
+
+include "db/connection.php";
+$sql = "SELECT * FROM jds WHERE jdId='JPW22I-WD-1001'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while ($row = $result->fetch_assoc()) {
+        $jdRole =  $row["jdRole"];
+        $jdId =  $row["jdId"];
+        $jdSummary =  $row["jdSummary"];
+        $jdDesc =  $row["jdDesc"];
+        $jdElig =  $row["jdElig"];
+    }}
+
+
+?>
+                       
+
 <head>
     <link rel="stylesheet" href="assets/styles/style-header.css">
 </head>
@@ -8,10 +28,12 @@
             <div class="row text-center text-sm-left justify-content-center justify-content-sm-between mt-4">
                 <div class="col-10 col-xs-5 col-sm-6">
                     <p class="job-title text-capitalize">
-                        graphic designer
+                        
+                        <!-- graphic designer -->
+                        <?php echo $jdRole; ?>
                     </p>
                     <p class="job-id text-uppercase">
-                        Job ID: JPW22D-GD-1001
+                        Job ID: <?php echo $jdId; ?>
                     </p>
                 </div>
                 <div class="col-10 col-xs-5 col-sm-6 mt-3 my-xs-auto d-sm-flex justify-content-sm-end">
@@ -33,7 +55,7 @@
                 job summary
             </p>
             <p class="content mt-4">
-                We are looking for a rock star Graphics Designer/Motion graphics for our team in Bangalore GlowRoad(a unit of Amazon), India, who will work on different Cross-channel/Cross-site marketing projects, all aimed at supporting marketing campaigns and offering clients compelling and engaging visual experiences. The candidate should be a learning expert who is creative, analytical and able to coordinate a small team of graphic designers working on the same project.
+            <?php echo $jdSummary; ?>
             </p>
         </div>
         <div class="col-10 col-sm-12 col-md-6 jd-col mt-4">
